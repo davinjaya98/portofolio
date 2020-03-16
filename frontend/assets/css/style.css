@@ -1,0 +1,50 @@
+.index-page {
+    margin: 0;
+}
+.index-page .main-background {
+    width: 1920px;
+    height: 947px;
+    background-image: url('../image/town_bg_3.png');
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.index-page .main-background .car-1{
+    width: 20px;
+    height: 10px;
+    background-color: blue;
+    position: absolute;
+    bottom: -20px;
+    left: 45px;
+    /*bottom: 10px;
+    left: 86px;*/
+    transform: rotate(-32deg);
+    animation: car_1 9s linear infinite;
+    -webkit-animation: car_1 9s linear infinite;
+}
+.index-page .main-background .car-2{
+    width: 30px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: -20px;
+    right: 222px;
+    transform: rotate(-31deg);
+    animation: car_2 15s linear infinite;
+    -webkit-animation: car_2 15s linear infinite;
+}
+.index-page .main-background .car-3{
+    width: 10px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 385px;
+    left: -10px;
+    transform: rotate(85deg);
+    animation: car_3 12s linear infinite;
+    -webkit-animation: car_3 12s linear infinite;
+}
+
+@keyframes car_1{ 0%{ transform:translate(0px,0px) rotate(-32deg)} 100%{ transform:translate(1600px, -980px) rotate(-32deg)}}
+@keyframes car_2{ 0%{ transform:translate(0px,0px) rotate(-31deg)} 100%{ transform:translate(-1595px, 980px) rotate(-31deg)}}
+@keyframes car_3{ 0%{ transform:translate(0px,0px) rotate(85deg)} 35%{ transform:translate(500px, -47px) rotate(85deg)} 42.5%{ transform: translate(510px,-47px) rotate(-6deg)} 55%{ transform: translate(491px, -235px) rotate(-6deg)} 62.5%{ transform: translate(495px, -245px) rotate(85deg)} 77.5%{ transform: translate(805px, -275px) rotate(85deg)} 85%{ transform: translate(810px, -285px) rotate(-6deg)} 100% { transform: translate(798px, -410px) rotate(-6deg)}}
